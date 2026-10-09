@@ -13,11 +13,25 @@ A web application that converts text into ASCII art using different banner style
 
 ### Running the Server
 
+Build and run locally:
+
 ```bash
-git clone https://learn.zone01oujda.ma/git/erezzoug/ascii-art-web-dockerize
+git clone https://github.com/zoro-craft/ascii-art-web-dockerize
 cd ascii-art-web-dockerize
-docker build -t ascii-art-web-dockerize .
-docker run -d -p 8080:8080 ascii-art-web-dockerize
+docker build -t elmehdirezoug/ascii-art:1.0.0 .
+docker run -d -p 8080:8080 elmehdirezoug/ascii-art:1.0.0
+```
+
+Or pull the published image from Docker Hub:
+
+```bash
+docker run -d -p 8080:8080 elmehdirezoug/ascii-art:1.0.0
+```
+
+Or use Docker Compose:
+
+```bash
+docker compose up -d
 ```
 
 Then open `http://localhost:8080` in your browser. 
@@ -64,6 +78,7 @@ ascii-art-web-dockerize/
 │   ├── generator.go
 │   └── utils.go
 ├── Dockerfile
+├── docker-compose.yml
 ├── .dockerignore
 ├── handlers/
 │   ├── homePageHandler.go
