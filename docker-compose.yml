@@ -1,0 +1,18 @@
+name: ascii-art
+
+services:
+  ascii-art:
+    build: .
+    image: elmehdirezoug/ascii-art:1.0.0
+    container_name: ascii-art
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+
+    # Security hardening
+    user: "10001:10001"
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true

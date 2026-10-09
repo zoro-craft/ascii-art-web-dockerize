@@ -1,2 +1,8 @@
-Dockerfile
 .git
+.gitignore
+.github
+Dockerfile
+docker-compose.yml
+.dockerignore
+*.md
+*.log
