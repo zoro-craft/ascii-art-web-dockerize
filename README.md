@@ -28,6 +28,12 @@ Or pull the published image from Docker Hub:
 docker run -d -p 8080:8080 elmehdirezoug/ascii-art:1.0.0
 ```
 
+Running on ARM (arm64):
+
+```bash
+docker run -d -p 8080:8080 elmehdirezoug/ascii-art-arm:1.0.0
+```
+
 Or use Docker Compose:
 
 ```bash
