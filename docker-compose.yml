@@ -6,7 +6,7 @@ services:
     container_name: ascii-art
     restart: unless-stopped
     ports:
-      - "8082:8080"
+      - "8080:8080"
 
     # Security hardening
     user: "10001:10001"
